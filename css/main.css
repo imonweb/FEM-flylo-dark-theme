@@ -1,0 +1,80 @@
+/*  Globa styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&family=Raleway:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Fonts  */
+:root {
+  /*  Primary Colors */
+  --intro-email-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonials-bg: hsl(219, 30%, 18%);
+  /*  Accent */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  /*  Neutral */
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: var(--main-bg);
+  color: var(--white);
+}
+
+h2,
+h3,
+nav,
+.cta {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/*  nav */
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 73px 80px;
+  background: var(--intro-email-bg);
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+}
+
+.nav__items :not(:last-child) {
+  margin-right: 56px;
+}
+/*# sourceMappingURL=main.css.map */

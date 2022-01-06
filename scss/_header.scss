@@ -1,0 +1,18 @@
+ /*  nav */
+ .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 73px 80px;
+  background: var(--intro-email-bg);
+
+  &__items {
+    display: flex;
+    align-items: center;
+    
+    :not(:last-child){
+      margin-right: 56px;
+    }
+  }
+ }
