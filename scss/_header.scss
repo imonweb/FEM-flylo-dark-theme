@@ -1,18 +1,31 @@
- /*  nav */
- .nav {
-  width: 100%;
-  display: flex;
+header {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
+  gap: 20px;
   align-items: center;
-  justify-content: space-between;
-  padding: 73px 80px;
-  background: var(--intro-email-bg);
+  background-color: var(--introBg);
+  padding: 25px 20px 50px 20px;
+  
+  @include breakpoint(large){
+    padding: 73px 80px;
+    gap: 58px;
+  }
 
-  &__items {
-    display: flex;
-    align-items: center;
-    
-    :not(:last-child){
-      margin-right: 56px;
+  img {
+    width: 5.1875rem; //83px;
+
+    @include breakpoint(large){
+      width: 11.5625rem; //185px;
     }
   }
- }
+
+  a {
+    font-size: 0.875rem;
+
+    @include breakpoint(large){
+      font-size: 1rem;
+    }
+  }
+ } /*  header */
+
+ 
