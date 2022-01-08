@@ -25,6 +25,10 @@ header {
     @include breakpoint(large){
       font-size: 1rem;
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
  } /*  header */
 

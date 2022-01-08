@@ -49,7 +49,7 @@ p {
 }
 
 section {
-  padding: 0 27px;
+  padding: 0 27px 160px;
 }
 
 button {
@@ -61,6 +61,12 @@ button {
   color: var(--white);
   width: 100%;
   max-width: 280px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right, var(--ctaBlue), var(--ctaCyan));
 }
 
 ul,
@@ -77,6 +83,11 @@ a, p {
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
 }
 
 header {
@@ -115,6 +126,10 @@ header a {
   }
 }
 
+header a:hover {
+  text-decoration: underline;
+}
+
 /*  header */
 .hero {
   background-color: var(--introBg);
@@ -139,7 +154,11 @@ header a {
 
 .hero p {
   max-width: 36.56rem;
-  font-size: 0.95em;
+  font-size: 0.70em;
+}
+
+.hero button {
+  margin-top: 10px;
 }
 
 /*  hero */

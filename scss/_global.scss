@@ -35,7 +35,7 @@ p {
 }
 
 section {
-  padding: 0 27px;
+  padding: 0 27px 160px;
 }
 
 button {
@@ -48,6 +48,12 @@ button {
   color: var(--white);
   width: 100%;
   max-width: 280px;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to right, var(--ctaBlue), var(--ctaCyan));
+  }
 }
 
 ul,
@@ -64,6 +70,11 @@ a, p {
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
 }
 
  
