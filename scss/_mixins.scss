@@ -1,6 +1,6 @@
 $breakpoints: (
   small: 499px,
-  medium: 899px,
+  medium: 699px,
   large: 999px,
   xlarge: 1399px 
 );
@@ -11,4 +11,8 @@ $breakpoints: (
   @media screen and (min-width: $breakpoint-value){
     @content;
   }
+
+  // @media screen (min-width: $breakpoint-value){
+  //   @content;
+  // }
 }

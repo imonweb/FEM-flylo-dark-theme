@@ -132,12 +132,38 @@ header a:hover {
 
 /*  header */
 .hero {
+  position: relative;
   background-color: var(--introBg);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 40vh;
+  bottom: 0px;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+@media screen and (min-width: 699px) {
+  .hero:after {
+    background-image: url("../images/bg-curvy-desktop.svg");
+    height: 33vh;
+  }
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero img {
@@ -162,4 +188,44 @@ header a:hover {
 }
 
 /*  hero */
+.features {
+  background-color: var(--mainBg);
+  width: 100%;
+  gap: 94px 150px;
+}
+
+.features .feature-grid {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 699px) {
+  .features .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.features .feature {
+  border: 1px solid salmon;
+  text-align: center;
+}
+
+.features .feature-image {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.features .feature-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.features .feature-description {
+  font-size: 1rem;
+}
+
+/*  features */
 /*# sourceMappingURL=main.css.map */
