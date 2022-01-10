@@ -1,9 +1,14 @@
 .features {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: var(--mainBg);
   width: 100%;
-  gap: 94px 150px;
+  // gap: 94px 150px;
+  gap: 6vw 10vw;
+  margin: 0 auto;
   
   .feature-grid {
+
     max-width: 55rem; //880px;
     margin: 0 auto;
     
@@ -14,16 +19,21 @@
   }
 
   .feature {
-    border: 1px solid salmon;
+    // border: 1px solid salmon;
     // min-height: 350px;
     text-align: center;
      
     &-image {
-      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
       margin-bottom: 30px;
-       
-      // max-width: 104px;
-      // width: 100%;
+      border: 1px solid goldenrod;
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
 
     &-title {

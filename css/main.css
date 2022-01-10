@@ -189,9 +189,12 @@ header a:hover {
 
 /*  hero */
 .features {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: var(--mainBg);
   width: 100%;
-  gap: 94px 150px;
+  gap: 6vw 10vw;
+  margin: 0 auto;
 }
 
 .features .feature-grid {
@@ -207,13 +210,21 @@ header a:hover {
 }
 
 .features .feature {
-  border: 1px solid salmon;
   text-align: center;
 }
 
 .features .feature-image {
-  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
   margin-bottom: 30px;
+  border: 1px solid goldenrod;
+}
+
+.features .feature-image img {
+  height: 100%;
+  width: auto;
 }
 
 .features .feature-title {
