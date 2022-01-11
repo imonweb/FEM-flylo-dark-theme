@@ -36,6 +36,7 @@ p {
 
 section {
   padding: 0 27px 160px;
+  background-color: var(--mainBg);
 }
 
 button {
@@ -62,7 +63,7 @@ li {
 }
 
 a, p {
-  font-size: 0.95em; //16px;
+  font-size: 0.65em; //16px;
   color: var(--white);
   font-weight: 400;
 }
@@ -70,6 +71,7 @@ a, p {
 a {
   text-decoration: none;
   color: var(--white);
+  // font-size: 1rem;
 }
 
 p {

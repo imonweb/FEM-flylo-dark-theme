@@ -1,26 +1,27 @@
 .features {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: var(--mainBg);
-  width: 100%;
-  // gap: 94px 150px;
-  gap: 6vw 10vw;
-  margin: 0 auto;
-  
-  .feature-grid {
 
+  background-color: var(--mainBg);
+ // width: 100%;
+ // gap: 6vw 10vw; // gap: 94px 150px;
+ // margin: 0 auto;
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     max-width: 55rem; //880px;
     margin: 0 auto;
     
-    @include breakpoint(medium){
-      display: grid;
+    @include breakpoint(medium){ 
       grid-template-columns: repeat(2, 1fr);
-    }       
-  }
+      // gap: 90px 150px;
+    }
 
+    @include breakpoint(large){       
+      gap: 7vh 7vw;
+    }  
+  }
+   
   .feature {
-    // border: 1px solid salmon;
-    // min-height: 350px;
     text-align: center;
      
     &-image {
@@ -29,7 +30,7 @@
       align-items: center;
       height: 90px;
       margin-bottom: 30px;
-      border: 1px solid goldenrod;
+       
       img {
         height: 100%;
         width: auto;
