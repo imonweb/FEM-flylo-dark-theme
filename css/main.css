@@ -91,18 +91,31 @@ p {
   margin-bottom: 1.5em;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px 20px 100px 20px;
+}
+
+@media screen and (min-width: 999px) {
+  .container {
+    padding: 73px 60px 87px 60px;
+  }
+}
+
 header {
+  background-color: var(--introBg);
+}
+
+header .container {
   display: grid;
   grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
   gap: 20px;
   align-items: center;
-  background-color: var(--introBg);
-  padding: 25px 20px 50px 20px;
 }
 
 @media screen and (min-width: 999px) {
-  header {
-    padding: 73px 80px;
+  header .container {
     gap: 58px;
   }
 }
@@ -135,11 +148,6 @@ header a:hover {
 .hero {
   position: relative;
   background-color: var(--introBg);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 .hero:after {
@@ -160,6 +168,14 @@ header a:hover {
     background-image: url("../images/bg-curvy-desktop.svg");
     height: 33vh;
   }
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero > * {
@@ -196,8 +212,11 @@ header a:hover {
 .features .feature-grid {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 55rem;
+  gap: 6vw 10vw;
+  max-width: 57.5rem;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 699px) {
@@ -353,21 +372,48 @@ header a:hover {
 
 .testimonials {
   /*  grid */
+  /*  testimonial */
 }
 
-.testimonials__box1, .testimonials__box2, .testimonials__box3 {
-  padding: 30px 30px 30px 20px;
+.testimonials__grid {
+  /*
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    */
+}
+
+@media screen and (min-width: 999px) {
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1320px;
+  }
+}
+
+.testimonials .testimonial {
   background-color: var(--testimonialsBg);
-}
-
-.testimonials__box1 {
+  padding: 44px 24px 24px 24px;
+  border-radius: 5px;
   position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
+  /*
+    position: relative;
+    padding: 30px 30px 30px 20px;
+    background-color: var(--testimonialsBg);
+    width: 100%; // max-width: 280px;
+    height: 100%;
+    z-index: 999;
+    */
 }
 
-.testimonials__box1::before {
+@media screen and (min-width: 999px) {
+  .testimonials .testimonial {
+    flex: 1;
+  }
+}
+
+.testimonials .testimonial:first-child::before {
   position: absolute;
   content: '';
   background-image: url("../images/bg-quotes.png");
@@ -379,25 +425,40 @@ header a:hover {
   z-index: 0;
 }
 
-.testimonials__message {
+.testimonials .testimonial__message {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   font-weight: 400;
 }
 
-.testimonials__author img {
-  height: 24px;
-  width: 24px;
+.testimonials .testimonial__author {
+  display: grid;
+  justify-self: start;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.testimonials .testimonial__author img {
+  height: 54px;
+  width: 54px;
   border-radius: 50%;
   display: block;
 }
 
-.testimonials__author--info {
+.testimonials .testimonial__author--info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid salmon;
+}
+
+.testimonials .testimonial__author--info h4 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.testimonials .testimonial__author--info small {
+  font-size: 10px;
 }
 
 /*  testimonials */

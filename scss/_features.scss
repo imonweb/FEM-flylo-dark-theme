@@ -8,8 +8,11 @@
   .feature-grid {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 55rem; //880px;
+    gap: 6vw 10vw;
+    max-width: 57.5rem;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
     
     @include breakpoint(medium){ 
       grid-template-columns: repeat(2, 1fr);
