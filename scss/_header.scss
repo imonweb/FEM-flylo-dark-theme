@@ -1,5 +1,6 @@
 header {
   background-color: var(--introBg);
+  // background-color: #1b2330;
 
   .container {
     display: grid;
@@ -10,7 +11,7 @@ header {
     
     @include breakpoint(large){
       // padding: 73px 80px;
-      gap: 58px;
+      gap: 56px;
     }
   }
 
