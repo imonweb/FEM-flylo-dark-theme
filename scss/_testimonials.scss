@@ -1,0 +1,125 @@
+.testimonials {
+
+  &__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 500px;
+
+    @include breakpoint(large){
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1320px;
+    }
+
+    &:first-child:before {
+      content: url('../images/bg-quotes.png');
+      transform: scale(0.7);
+      position: absolute;
+      z-index: 0;
+      // top: -20px;
+      top: -4px;
+      left: 20px;
+      width: 27px;
+      height: 18px;
+
+       @include breakpoint(large) {
+          transform: none;
+          top: 37px;
+          left: 50px;
+          width: 60px;
+          height: 45px;
+      }
+    }
+
+  } /*  grid */
+
+  .testimonial {
+    position: relative;
+    z-index: 1;
+    background-color: var(--testimonialsBg);
+    padding: 30px 24px 24px 24px;
+    border-radius: 5px;
+
+    // margin-bottom: 30px;
+
+    @include breakpoint(large){
+      padding: 44px 24px 24px 24px;;
+    }
+    
+
+    &__para {
+      font-size: 0.70em;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+/*
+    &__author {
+      align-items: center;
+      display: flex;
+
+      img {
+        height: 54px;
+        width: 54px;
+        border-radius: 50%;
+        display: block;
+        margin-right: 8px;
+      }
+
+      &--info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h4 {
+          font-size: 1rem;
+          margin-bottom: 5px;
+          font-weight: 400;
+        }
+
+        small {
+          font-size: 10px;
+          letter-spacing: 1.4px;
+        }
+      }
+    }
+  */
+
+    &__author {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      grid-template-rows: 20px 20px;
+      column-gap: 14px;
+    
+      &--img {
+        // width: 40px;
+        // height: 40px;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+
+      // &--info {
+
+      &--name {
+        font-size: 0.5em;
+        font-weight: 700;
+      }
+
+      &--title {
+        font-size: .65rem;
+        letter-spacing: 1.4px;
+        font-weight: 400;
+      }
+      // }
+    } /*  author */
+  } /*  testimonial */
+} /*  testimonials */

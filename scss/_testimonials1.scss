@@ -1,0 +1,77 @@
+.testimonials {
+
+  &__grid {
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // gap: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+  } /*  grid */
+
+  &__box1, &__box2, &__box3 {
+    padding: 30px 30px 30px 20px;
+    background-color: var(--testimonialsBg);
+  }
+
+  &__box1 {
+    position: relative;
+    width: 100%;
+    // max-width: 280px;
+    height: 100%;
+    z-index: 999;
+    
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/bg-quotes.png');
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: -30px;
+      left: 10px;
+      z-index: 0;
+    }
+  }
+
+  &__message {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  &__author {
+    // display: grid;
+    // justify-self: start;
+    // grid-template-columns: 1fr;
+    // align-items: center;
+    display: flex;
+
+    img {
+      height: 54px;
+      width: 54px;
+      border-radius: 50%;
+      display: block;
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      // border: 1px solid salmon;
+
+      h4 {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+
+      small {
+        font-size: 10px;
+      }
+    }
+  }
+} /*  testimonials */
