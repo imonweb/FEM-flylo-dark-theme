@@ -498,21 +498,34 @@ header a:hover {
 /*  testimonials */
 .subscriptions {
   /*  subscription */
-}
-
-.subscriptions__grid {
-  background-color: #0B1524;
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-}
-
-.subscriptions .subscription {
   /*  form */
 }
 
-.subscriptions .subscription__form {
-  max-width: 863px;
+.subscriptions .subscription--heading {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 999px) {
+  .subscriptions .subscription--heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .subscriptions .subscription--text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 38px;
+    margin-left: 115px;
+    margin-right: 115px;
+  }
+}
+
+.subscriptions__form {
+  max-width: 57.5rem;
   width: 100%;
   max-width: 900px;
   height: 100%;
@@ -525,48 +538,26 @@ header a:hover {
 }
 
 @media screen and (min-width: 999px) {
-  .subscriptions .subscription__form {
+  .subscriptions__form {
     grid-template-columns: 1fr;
     width: 100%;
   }
 }
 
-.subscriptions .subscription__form--heading {
-  font-size: 18px;
+.subscriptions__form__input-group {
+  display: flex;
 }
 
 @media screen and (min-width: 999px) {
-  .subscriptions .subscription__form--heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 22px;
+  .subscriptions__form__input-group {
+    max-width: 600px;
   }
 }
 
-@media screen and (min-width: 999px) {
-  .subscriptions .subscription__form--text {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 38px;
-    margin-left: 115px;
-    margin-right: 115px;
-  }
-}
-
-.subscriptions .subscription__form__input-group {
-  display: grid;
-}
-
-@media screen and (min-width: 999px) {
-  .subscriptions .subscription__form__input-group {
-    max-width: 900px;
-    border: 1px solid goldenrod;
-  }
-}
-
-.subscriptions .subscription__form__input-group--email {
-  padding: 16px 38px;
+.subscriptions__form small.msg-error {
+  color: #FF4242;
+  font-size: 10px;
+  left: 0;
 }
 
 /*  subscriptions */

@@ -1,76 +1,83 @@
 .subscriptions {
 
   &__grid {
-    background-color: #0B1524;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    
   }
 
   .subscription {
 
-    &__form {
-      max-width: 863px;
-      width: 100%;
-      max-width: 900px;
-      height: 100%;
-      background-color: var(--testimonialsBg);
-      padding: 40px 28px;
-      // left: 50%;
-      transform: translateY(-75%);
-      display: grid;
-      place-items: center;
-      border-radius: 5px;
+    
+    
+
+     &--heading {
+      font-size: 18px;
 
       @include breakpoint(large){
-        grid-template-columns: 1fr;
-        width: 100%;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 22px;
       }
+    }
 
-      &--heading {
-        font-size: 18px;
+    &--text {
 
-        @include breakpoint(large){
-          font-size: 2rem;
-          font-weight: 700;
-          margin-bottom: 22px;
-        }
+      @include breakpoint(large){
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 38px;
+        margin-left: 115px;
+        margin-right: 115px;
       }
-
-      &--text {
-
-        @include breakpoint(large){
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.6;
-          margin-bottom: 38px;
-          margin-left: 115px;
-          margin-right: 115px;
-        }
-      }
-
-      &__input-group {
-        display: grid;
-        
-        
-        @include breakpoint(large){
-          max-width:900px;
-          border: 1px solid goldenrod;
-        }
-
-        &--email {
-          padding: 16px 38px;
-
-        }
-
-        &--button {
-
-        }
-
-      }
-
-      
-      
-    } /*  form */
+    }
   } /*  subscription */
+
+  &__form {
+    
+    max-width: 57.5rem;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    background-color: var(--testimonialsBg);
+    padding: 40px 28px;
+    // left: 50%;
+    transform: translateY(-75%);
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+
+    @include breakpoint(large){
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    &__input-group {
+      display: flex;
+      
+      
+      @include breakpoint(large){
+        max-width:600px;
+        
+      }
+
+      &--email {
+        
+      }
+
+      &--button {
+        
+      }
+
+      
+    }
+
+    small.msg-error {
+      color: #FF4242;
+      font-size: 10px;
+      left:0;
+    }
+    
+    
+  } /*  form */
+  
 } /*  subscriptions */
