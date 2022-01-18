@@ -79,6 +79,21 @@ p {
   margin-bottom: 1.5em;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+h2.small {
+  font-size: 1.3em;
+}
+h2.large {
+  font-size: 1.6em;
+}
+
+section {
+  background-color: var(--mainBg);
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -86,5 +101,10 @@ p {
 
   @include breakpoint(large){
     padding: 73px 60px 87px 60px;
+  }
+
+  &--small {
+    @extend .container;
+    max-width: 920px;
   }
 }
