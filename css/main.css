@@ -522,5 +522,11 @@ header a:hover {
   /*  form */
 }
 
+.subscriptions__form small.msg-error {
+  color: #FF4242;
+  font-size: 10px;
+  left: 0;
+}
+
 /*  subscriptions */
 /*# sourceMappingURL=main.css.map */
