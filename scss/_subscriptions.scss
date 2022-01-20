@@ -1,8 +1,9 @@
 .subscriptions {
 
-  border: 1px solid salmon;
-  background-color: var(--introBg);
   &__wrapper {
+    border: 1px solid salmon;
+    background-color: var(--introBg);
+    padding: 50px 80px 45px 80px;
 
      
      &--heading {

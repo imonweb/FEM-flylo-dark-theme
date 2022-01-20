@@ -517,9 +517,13 @@ header a:hover {
 
 /*  testimonials */
 .subscriptions {
+  /*  form */
+}
+
+.subscriptions__wrapper {
   border: 1px solid salmon;
   background-color: var(--introBg);
-  /*  form */
+  padding: 50px 80px 45px 80px;
 }
 
 .subscriptions__form small.msg-error {
