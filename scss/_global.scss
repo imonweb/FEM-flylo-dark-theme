@@ -27,6 +27,7 @@ h1,
 h2, 
 h3 {
   font-family: "Raleway", sans-serif;
+  margin-top: 0;
   // font-weight: 700;
 }
 
@@ -39,23 +40,7 @@ section {
   background-color: var(--mainBg);
 }
 
-button {
-  border: none;
-  padding: 20px;
-  background: 
-  linear-gradient(to right, var(--ctaCyan), var(--ctaBlue));
-  font-size: 0.65em;
-  padding: 20px 90px;
-  color: var(--white);
-  width: 100%;
-  max-width: 280px;
-  border-radius: 30px;
-  cursor: pointer;
 
-  &:hover {
-    background: linear-gradient(to right, var(--ctaBlue), var(--ctaCyan));
-  }
-}
 
 ul,
 li {
@@ -81,6 +66,7 @@ p {
 
 h1, h2, h3 {
   font-family: var(--font-title);
+  margin-top: 0;
 }
 
 h2.small {
