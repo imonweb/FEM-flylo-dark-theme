@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--footerBg);
+
+  &__logo {
+
+  }
+
+  &__address {
+
+  }
+
+  &__contact {
+
+    &-phone {
+
+    }
+
+    &-email {
+
+    }
+  }
+
+  &__links1 {
+
+  }
+
+  &__links2 {
+
+  }
+
+  &__social {
+
+    svg {
+      fill: #fff;
+      height: 20px;
+    }
+  }
+} /*  footer */

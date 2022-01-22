@@ -1,0 +1,51 @@
+button, .button {
+  border: none;
+  padding: 15px 20px;
+  background: linear-gradient(to right, var(--ctaCyan), var(--ctaBlue));
+  // font-size: 0.875em;
+  font-weight: 700;
+  padding: 15px 20px;
+  color: var(--white);
+  width: 100%;
+  text-align: center;
+  // max-width: 200px;
+  border-radius: var(--border-radius-circle);
+  cursor: pointer;
+
+  @include breakpoint(medium){
+    max-width: 200px;
+  }
+
+  &:hover {
+    background: linear-gradient(to right, var(--ctaBlue), var(--ctaCyan));
+  }
+  
+  &--large {
+    @extend .button;
+    padding: 20px;
+
+    @include breakpoint(medium){
+      min-width: 285px;
+    }
+  }
+}
+
+input {
+  font-family: var(--font-body);
+}
+
+input[type="text"], input[type="email"]{
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-circle);
+  font-size: .9rem;
+  color: var(--footerBg);
+  padding: 17px 40px;
+}
+
+small.msg-error {
+  display: flex;
+  left: 20px;
+  color: #FF4242;
+  font-size: 10px;
+}
