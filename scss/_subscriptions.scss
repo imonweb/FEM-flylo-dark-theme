@@ -1,5 +1,10 @@
 .subscriptions {
 
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  transform: translateY(-248px);
+
   &__wrapper {
     // border: 1px solid salmon;
     border-radius: var(--border-radius);
